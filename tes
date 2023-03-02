@@ -1,0 +1,40 @@
+function dna(arn) {
+  let protein = "";
+  let proteinArray = [];
+  for (let i = 0; i < arn.length; i += 3) {
+    codons = arn.slice(i, i + 3);
+
+    for (let step = 0; step < 6; step++){
+
+    switch (codons) {
+      case "UCU " || "UCC" || "UCA" || "UCG" || "AGU" || "AGC":
+        protein = "Sérine";
+        proteinArray.push(protein);
+        break;
+      case "CCU" || "CCC" || "CCA" || "CCG":
+        protein = "Proline";
+        proteinArray.push(protein);
+        break;
+      case "UUA" || "UUG":
+        protein = "Leucine";
+        proteinArray.push(protein);
+        break;
+      case "UUU" || "UUG":
+        protein = "Phénylalanine";
+        proteinArray.push(protein);
+        break;
+      case "CGU" || "CGC" || "CGA" || "CGG" || "AGA" || "AGG":
+        protein = "Arginine";
+        proteinArray.push(protein);
+        break;
+      case "UAU" || "UAC":
+        protein = "Tyrosine";
+        proteinArray.push(protein);
+        break;
+      }
+    }
+  }
+  console.log(proteinArray)
+}
+
+dna("CCGUCGUUGCGCUACAGC");
