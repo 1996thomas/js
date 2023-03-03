@@ -57,7 +57,7 @@ function sortBy() {
 //   document.querySelector(".content").innerHTML = seventies()
 // })
 
-// array_names();
-// seventies();
-// age();
-// sortBy();
+array_names();
+seventies();
+age();
+sortBy();

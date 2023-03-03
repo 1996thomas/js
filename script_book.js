@@ -31,7 +31,7 @@ function mostRented() {
     }
   });
   console.log(maxTitle, "avec", max, "emprunts");
-  return max
+  return max;
 }
 
 function leastRented() {
@@ -46,27 +46,28 @@ function leastRented() {
   console.log(minTitle, "avec", min, "emprunts");
 }
 
-function finderId(){
-  books.forEach((i) =>{
-    if(i.id == 873495){
-      console.log(i.title)
+function finderId() {
+  books.forEach((i) => {
+    if (i.id == 873495) {
+      console.log(i.title);
     }
-  })
+  });
 }
 
-function deleteId(){
-  return books.filter(function (i){
-    i.id != 133712 
-  }) 
+function deleteId(books) {
+  return books.id != 133712;
 }
-function sortBy(){
-  
-  
+function sortBy() {
+  let array = [];
+  books.forEach((i) => {
+    array.push(i.title);
+  });
+  return array.sort();
 }
 
 oneTime();
 mostRented();
 leastRented();
 finderId();
-deleteId()
-sortBy()
+console.log(books.filter(deleteId));
+console.log(sortBy());

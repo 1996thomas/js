@@ -31,9 +31,8 @@ function dna(arn){
 
 
     }
-    console.log(proteinArray[0],proteinArray[1],proteinArray[2],proteinArray[3],proteinArray[4],proteinArray[5])
   }
 
   // dna("CCUCGCCGGUACUUCUCG")
   // console.log(dna("CCGUCGUUGCGCUACAGC"))
-  console.log(dna("CCUCGCCGGUACUUCUCG")) 
+  // console.log(dna("CCUCGCCGGUACUUCUCG")) 
